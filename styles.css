@@ -1,0 +1,505 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Barlow', 'Fraunces', sans-serif;
+  font-size: 18px;
+}
+
+header {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+header nav .nav-links ul li {
+  list-style-type: none;
+}
+
+/* input {
+  display: none;
+} */
+
+header h1 {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Fraunces';
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 3rem;
+  letter-spacing: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+}
+
+main .transform-container div p a {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: hsla(51, 100%, 49%, 0.3);
+}
+
+main .stand-out-container div p a {
+  text-decoration: underline;
+  text-decoration-color: hsl(7, 99%, 70%, 0.3);
+  text-decoration-thickness: 5px;
+}
+
+main section div h1 {
+  font-family: 'Fraunces';
+  font-weight: 700;
+}
+
+main section div p {
+  color: hsl(213, 9%, 39%);
+  line-height: 1.5rem;
+}
+
+main section div p a {
+  font-family: 'Fraunces';
+  color: hsl(212, 27%, 19%);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+main .graphic-photography-container .graphic-design-container,
+main .graphic-photography-container .photography-container {
+  position: relative;
+  text-align: center;
+}
+
+main .graphic-photography-container .graphic-design-container .graphic-text,
+main .graphic-photography-container .photography-container .photography-text {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main .graphic-photography-container div img {
+  width: 100%;
+}
+
+main .graphic-photography-container .graphic-design-container h2,
+main .graphic-photography-container .photography-container h2 {
+  font-family: 'Fraunces';
+  margin: 1rem 0;
+}
+
+main .graphic-photography-container .graphic-design-container p,
+main .graphic-photography-container .photography-container p {
+  font-family: 'Barlow';
+  text-align: center;
+  margin: 1rem auto;
+  font-weight: 500;
+}
+
+main .graphic-photography-container .graphic-design-container h2,
+main .graphic-photography-container .graphic-design-container p {
+  color: hsl(167, 40%, 24%);
+}
+
+main .graphic-photography-container .photography-container h2,
+main .graphic-photography-container .photography-container p {
+  color: hsl(198, 62%, 26%);
+}
+
+main .clients-testimonials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+main .clients-testimonials-container h2 {
+  font-family: 'Fraunces';
+  color: hsl(210, 4%, 67%);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+main .clients-testimonials-container .profiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+main .clients-testimonials-container .profiles .emily-container,
+.thomas-container,
+.jennie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .clients-testimonials-container .profiles div img {
+  border-radius: 50%;
+  width: 25%;
+}
+
+main .clients-testimonials-container .profiles div p {
+  text-align: center;
+  color: hsl(212, 27%, 19%);
+  margin: 0;
+}
+
+main .clients-testimonials-container .profiles div .name-title .name {
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: larger;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: hsl(168, 40%, 60%);
+}
+
+footer .footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+  margin: 1.5rem 0;
+}
+
+footer .footer-links li {
+  list-style: none;
+}
+
+footer ul li a {
+  color: hsl(167, 40%, 24%);
+  text-decoration: none;
+}
+
+footer .footer-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+/* Mobile Design */
+@media screen and (max-width: 999px) {
+  .desktop-image {
+    display: none;
+  }
+
+  header {
+    background-image: url(./images/mobile/image-header.jpg);
+    padding: 2rem;
+    height: 100vh;
+  }
+
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header nav .nav-links {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    width: 80%;
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+
+  header nav .nav-links {
+    display: none;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-weight: 700;
+  }
+
+  header nav .menu-btn div {
+    height: 3px;
+    width: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    content: '';
+    margin: 7px 0;
+  }
+
+  header nav .nav-links ul li a {
+    color: hsl(213, 9%, 39%);
+    text-decoration: none;
+    text-align: center;
+  }
+
+  header nav .nav-links ul .contact-btn {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color: hsl(212, 27%, 19%);
+    background-color: hsla(51, 100%, 49%);
+    padding: 1rem;
+    border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+
+  header nav .nav-links ul .contact-btn a {
+    color: hsl(212, 27%, 19%);
+  }
+
+  /* header nav .menu-btn {
+    display: block;
+    width: 60px;
+    color: hsl(0, 0%, 100%);
+  } */
+
+  input:checked ~ .nav-links {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    width: 80%;
+    padding: 2rem;
+    margin: 2rem 0;
+    transition: 2s ease-in;
+  }
+
+  header .head-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main section div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .transform-container,
+  main .stand-out-container {
+    flex-direction: column-reverse;
+  }
+
+  main .transform-content,
+  main .stand-out-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  main section div h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  main section div p {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  main .graphic-photography-container .graphic-design-container p,
+  main .graphic-photography-container .photography-container p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  main .graphic-photography-container .graphic-design-container .graphic-text,
+  main .graphic-photography-container .photography-container .photography-text {
+    width: 90%;
+  }
+
+  main .bottom-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  main .bottom-images img {
+    width: 100%;
+  }
+
+  main .clients-testimonials-container {
+    padding: 3rem;
+  }
+
+  main .clients-testimonials-container h2 {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+
+  main .clients-testimonials-container .profiles {
+    flex-direction: column;
+  }
+
+  main .clients-testimonials-container .profiles .emily-container,
+  .thomas-container,
+  .jennie-container {
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+}
+
+/* Desktop Design */
+@media screen and (min-width: 1000px) {
+  .mobile-image {
+    display: none;
+  }
+  header {
+    padding: 2rem;
+    background-image: url(./images/desktop/image-header.jpg);
+    height: 100vh;
+  }
+
+  header .menu-btn {
+    display: none;
+  }
+
+  header nav .nav-links ul,
+  header nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-evenly;
+  }
+
+  header nav .nav-links ul li a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    text-align: center;
+  }
+
+  header nav .nav-links ul .contact-btn {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color: hsl(212, 27%, 19%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+
+  header nav .nav-links ul .contact-btn a {
+    color: hsl(212, 27%, 19%);
+  }
+
+  header .head-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  header h1 {
+    font-size: 3.5rem;
+  }
+
+  main section {
+    display: flex;
+    flex-direction: row;
+  }
+  main section img {
+    width: 50%;
+  }
+
+  main .stand-out-container {
+    flex-direction: row-reverse;
+  }
+
+  main section .transform-content,
+  main section .stand-out-content {
+    padding: 5rem 5rem 5rem 8rem;
+  }
+
+  main section div h1 {
+    font-size: 3rem;
+    margin: 1.5rem 0;
+    text-align: left;
+  }
+
+  main section div p {
+    margin: 1.5rem 0;
+  }
+
+  main .graphic-photography-container .graphic-design-container .graphic-text,
+  main .graphic-photography-container .photography-container .photography-text {
+    width: 400px;
+  }
+
+  main .bottom-images img {
+    width: 25%;
+  }
+
+  main .clients-testimonials-container {
+    padding: 6rem;
+  }
+
+  main .clients-testimonials-container h2 {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+  }
+
+  main .clients-testimonials-container .profiles {
+    flex-direction: row;
+  }
+
+  main .clients-testimonials-container .profiles .emily-container,
+  .thomas-container,
+  .jennie-container {
+    gap: 2rem;
+  }
+}
