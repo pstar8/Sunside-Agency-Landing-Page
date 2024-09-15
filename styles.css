@@ -15,7 +15,6 @@ body {
 header {
   position: relative;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 header nav {
@@ -29,10 +28,6 @@ header nav {
 header nav .nav-links ul li {
   list-style-type: none;
 }
-
-/* input {
-  display: none;
-} */
 
 header h1 {
   text-align: center;
@@ -65,7 +60,8 @@ main .stand-out-container div p a {
 
 main section div h1 {
   font-family: 'Fraunces';
-  font-weight: 700;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
 }
 
 main section div p {
@@ -177,7 +173,7 @@ footer {
   gap: 2rem;
   justify-content: space-between;
   padding: 4rem 2rem;
-  background-color: hsl(168, 40%, 60%);
+  background-color: hsl(168, 54%, 63%);
 }
 
 footer .footer-links {
@@ -216,7 +212,9 @@ footer .footer-icons {
   header {
     background-image: url(./images/mobile/image-header.jpg);
     padding: 2rem;
-    height: 100vh;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
   }
 
   header nav {
@@ -282,12 +280,6 @@ footer .footer-icons {
     color: hsl(212, 27%, 19%);
   }
 
-  /* header nav .menu-btn {
-    display: block;
-    width: 60px;
-    color: hsl(0, 0%, 100%);
-  } */
-
   input:checked ~ .nav-links {
     display: flex;
     position: absolute;
@@ -307,7 +299,7 @@ footer .footer-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 5%;
   }
 
   header h1 {
@@ -400,6 +392,8 @@ footer .footer-icons {
     padding: 2rem;
     background-image: url(./images/desktop/image-header.jpg);
     height: 100vh;
+    background-size: cover;
+    background-position: center;
   }
 
   header .menu-btn {
@@ -441,11 +435,16 @@ footer .footer-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
+    justify-content: space-between;
+    gap: 6rem;
   }
 
   header h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+
+  input {
+    display: none;
   }
 
   main section {
@@ -466,7 +465,7 @@ footer .footer-icons {
   }
 
   main section div h1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin: 1.5rem 0;
     text-align: left;
   }
