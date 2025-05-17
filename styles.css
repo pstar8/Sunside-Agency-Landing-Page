@@ -158,6 +158,7 @@ main .clients-testimonials-container .profiles .emily-container,
 .jennie-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -170,6 +171,7 @@ main .clients-testimonials-container .profiles div p {
   text-align: center;
   color: hsl(212, 27%, 19%);
   margin: 0;
+  width: 320px;
 }
 
 main .clients-testimonials-container .profiles div .name-title .name {
@@ -311,6 +313,9 @@ footer .footer-icons img  ::-ms-fill{
     font-size: 2rem;
   }
 
+  header .arrow{
+    margin-top: 10%;
+  }
   main section {
     display: flex;
     flex-direction: column;
@@ -388,6 +393,20 @@ footer .footer-icons img  ::-ms-fill{
   }
 }
 
+/* Tablet Design */
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  header {
+    background-image: url(./images/desktop/image-header.jpg);
+    padding: 2rem;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+  }
+  header .arrow{
+    margin-top: 0%;
+  }
+}
+
 /* Desktop Design */
 @media screen and (min-width: 1000px) {
   .mobile-image {
@@ -450,6 +469,10 @@ footer .footer-icons img  ::-ms-fill{
 
   header h1 {
     font-size: 3rem;
+  }
+
+  header .arrow{
+    margin-top: 5%;
   }
 
   input {
